@@ -55,8 +55,8 @@ body {
     display: flex;
     justify-content: flex-end; /* Align the image to the right */
     align-items: center; /* Align the image vertically */
-    height: 100px; /* Ensure the container has a fixed height */
-    width: 100px; /* Ensure the container has a fixed width */
+    height: 200px; /* Ensure the container has a fixed height */
+    width: 200px; /* Ensure the container has a fixed width */
 }
 
 .profile-picture img {
