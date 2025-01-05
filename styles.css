@@ -51,18 +51,12 @@ body {
     align-items: center;
 }
 
-.profile-picture {
-    height: 100px;
+.profile-picture img {
     width: 100px;
+    height: 100px;
     border-radius: 50%;
-    background-color: #555;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    margin-bottom: 30px;
-    font-size: 0.8rem;
-    text-align: center;
+    object-fit: cover;
+    border: 2px solid #fff; /* Optional: Add a border */
 }
 
 .nav-links {
