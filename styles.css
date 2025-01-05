@@ -55,21 +55,19 @@ body {
     display: flex;
     justify-content: flex-end; /* Align the image to the right */
     align-items: center; /* Align the image vertically */
+    height: 100px; /* Ensure the container has a fixed height */
+    width: 100px; /* Ensure the container has a fixed width */
 }
 
 .profile-picture img {
     object-fit: cover;
     border: 2px solid #fff; /* Optional: Add a border */
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-color: #555;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    margin-left: 20px; /* Adjust space between image and next element */
+    height: 100%; /* Ensure the image fills the container height */
+    width: 100%; /* Ensure the image fills the container width */
+    border-radius: 50%; /* Makes the image circular */
+    background-color: #555; /* Optional: Background color when image isn't loaded */
 }
+
 
 .nav-links {
     width: 100%;
