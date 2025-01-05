@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Me</title>
   <style>
+    /* General Styles */
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -14,9 +15,10 @@
     .container {
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      height: 100vh;
-      padding: 0 20px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      height: auto; /* Allow content to grow */
+      padding: 20px;
     }
     .contact-section {
       width: 40%;
@@ -32,8 +34,8 @@
       border: none;
     }
     .back-button {
-      padding: 5px 10px;
-      font-size: 14px;
+      padding: 8px 16px;
+      font-size: 16px;
       background-color: transparent;
       border: 1px solid #00f;
       border-radius: 5px;
@@ -44,6 +46,31 @@
       background-color: #00f;
       color: #fff;
     }
+
+    /* Responsive Styles for Mobile */
+    @media screen and (max-width: 768px) {
+      .container {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center;
+      }
+      .contact-section, .game-section {
+        width: 90%; /* Full-width on smaller screens */
+        margin-bottom: 20px; /* Add space between sections */
+      }
+      iframe {
+        height: 70vh; /* Adjust iframe height for smaller screens */
+      }
+      .back-button {
+        font-size: 14px; /* Adjust button size */
+        padding: 6px 12px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      iframe {
+        height: 60vh; /* Further reduce iframe height for very small devices */
+      }
+    }
   </style>
 </head>
 <body>
@@ -51,10 +78,11 @@
     <!-- Contact Section -->
     <div class="contact-section">
       <h1>Contact Me</h1>
-      <p><a href="#">Instagram</a></p>
-      <p><a href="#">LinkedIn</a></p>
-      <p><a href="#">Email Me</a></p>
-      <p>Discord: ionizedsrujan#1234</p>
+      <p class="alternate-text">(or play flappy bird instead)</p>
+      <p><a href="https://www.instagram.com/ionizedsrujan?igsh=MTRkNWJlZ2IwNTY4bA==">Instagram</a></p>
+      <p><a href="https://www.linkedin.com/in/srujan-kulkarni-7816a42b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a></p>
+      <p><a href="kulkarninvd@gmail.com">Email Me</a></p>
+      <p>Discord: ionized_srujan</p>
       <button class="back-button" onclick="window.location.href='home.html'">← Back to Home</button>
     </div>
 
