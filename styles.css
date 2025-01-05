@@ -51,12 +51,24 @@ body {
     align-items: center;
 }
 
+.profile-picture {
+    display: flex;
+    justify-content: flex-end; /* Align the image to the right */
+    align-items: center; /* Align the image vertically */
+}
+
 .profile-picture img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
     object-fit: cover;
     border: 2px solid #fff; /* Optional: Add a border */
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-left: 20px; /* Adjust space between image and next element */
 }
 
 .nav-links {
