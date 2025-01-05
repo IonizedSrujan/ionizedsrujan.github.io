@@ -1,9 +1,9 @@
 // Theme toggle functionality
-document.querySelector('.theme-toggle').addEventListener('click', () => {
+document.querySelector('#toggle-theme').addEventListener('click', () => {
     document.body.classList.toggle('light-mode');
 });
 
-// Add light-mode styles
+// Add light-mode styles dynamically
 document.addEventListener('DOMContentLoaded', () => {
     const style = document.createElement('style');
     style.textContent = `
@@ -22,12 +22,13 @@ document.addEventListener('DOMContentLoaded', () => {
             background-color: #eee;
         }
 
-        .light-mode .theme-toggle {
-            color: #666;
+        .light-mode button#toggle-theme {
+            background-color: #ddd;
+            color: #000;
         }
 
-        .light-mode .theme-toggle:hover {
-            color: #000;
+        .light-mode button#toggle-theme:hover {
+            background-color: #ccc;
         }
     `;
     document.head.append(style);
