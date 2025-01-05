@@ -1,4 +1,4 @@
-8<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -61,10 +61,29 @@
             color: #bb86fc;
             font-weight: bold;
         }
+        .back-button {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #292929;
+            color: #bb86fc;
+            border: 2px solid #bb86fc;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            cursor: pointer;
+        }
+        .back-button:hover {
+            background-color: #bb86fc;
+            color: #121212;
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <button class="back-button" onclick="window.location.href='index.html'">← Back to Home</button>
         <h1>Portfolio</h1>
 
         <!-- Education Section -->
@@ -128,7 +147,6 @@
                 <li>Marathi</li>
             </ul>
         </div>
-        <button class="back-button" onclick="window.location.href='index.html'">← Back to Home</button>
     </div>
 </body>
 </html>
