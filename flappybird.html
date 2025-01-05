@@ -4,10 +4,8 @@
             /* Load the flappybird font from an external source */
             @font-face {
                 font-family: flappybird;
-                src: url('http://www.mediafont.com/storage/contents/3184/font.eot'); /* IE */ 
-                src: url('http://www.mediafont.com/storage/contents/3184/04B_19__.TTF'); /* non-IE */ 
+                src: url('./04B_19__.TTF') format('truetype');
             }
-            
 			body{
 				margin: 0; /* Make sure the body has 0 margin initially */
 				width:100%; /* Define we're using full width of the browser */
@@ -181,7 +179,7 @@
 		</style>
         
 		<!-- Bootstrap CSS from MaxCDN -->
-        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
 	</head>
 	<body>
 		<div id="Canvas">
@@ -224,7 +222,7 @@
 		</div>
 		
         <!-- jQuery from Google CDN -->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 		<script>
 			$(function(){
                 $('#InstructionBox').slideDown(); //Slide down the instructions box
