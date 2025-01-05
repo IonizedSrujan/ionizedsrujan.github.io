@@ -1,39 +1,34 @@
-// Blog data structure
-const blogs = [
-    {
-        title: "My Experience Visiting Shriharikota",
-        content: "I recently visited Shriharikota, India's spaceport, and it was an awe-inspiring experience! The tour of the launch pad, learning about ISRO's achievements, and witnessing the scale of operations was unforgettable.",
-        date: "January 4, 2025"
-    }
-];
+// Theme toggle functionality
+document.querySelector('.theme-toggle').addEventListener('click', () => {
+    document.body.classList.toggle('light-mode');
+});
 
-// Function to display blogs
-function displayBlogs() {
-    const blogPostsContainer = document.getElementById("blog-posts");
-    blogPostsContainer.innerHTML = ""; // Clear existing posts
+// Add light-mode styles
+document.addEventListener('DOMContentLoaded', () => {
+    const style = document.createElement('style');
+    style.textContent = `
+        .light-mode {
+            background-color: #f0f0f0;
+            color: #121212;
+        }
 
-    blogs.forEach(blog => {
-        const postDiv = document.createElement("div");
-        postDiv.classList.add("blog-post");
+        .light-mode .nav-link {
+            background-color: #fff;
+            color: #121212;
+            border: 1px solid #ccc;
+        }
 
-        const postTitle = document.createElement("h3");
-        postTitle.textContent = blog.title;
+        .light-mode .nav-link:hover {
+            background-color: #eee;
+        }
 
-        const postDate = document.createElement("p");
-        postDate.style.fontSize = "12px";
-        postDate.style.color = "gray";
-        postDate.textContent = blog.date;
+        .light-mode .theme-toggle {
+            color: #666;
+        }
 
-        const postContent = document.createElement("p");
-        postContent.textContent = blog.content;
-
-        postDiv.appendChild(postTitle);
-        postDiv.appendChild(postDate);
-        postDiv.appendChild(postContent);
-
-        blogPostsContainer.appendChild(postDiv);
-    });
-}
-
-// Load blogs on page load
-document.addEventListener("DOMContentLoaded", displayBlogs);
+        .light-mode .theme-toggle:hover {
+            color: #000;
+        }
+    `;
+    document.head.append(style);
+});
