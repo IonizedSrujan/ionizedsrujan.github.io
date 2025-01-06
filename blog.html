@@ -114,6 +114,7 @@
             fetch(`blogs/${file}`)
                 .then(response => response.text())
                 .then(markdown => {
+                    console.log(markdown)
                     const converter = new showdown.Converter();
                     contentElement.innerHTML = converter.makeHtml(markdown);
                 })

@@ -1,2 +1,2 @@
-Stay tuned for upcoming blogs people
-I'm working on the blogs
+# Test Blog
+This is a test blog content.
